@@ -1,6 +1,6 @@
 //calculates the minimum travel cost
 function findCost(cost){
-    var total=0;
+    let total=0;
 
     if(cost.length>3){
         total=cost[0]+cost[cost.length-1]+(2*cost[1]<cost[0]+cost[cost.length-2]?2*cost[1]:cost[0]+cost[cost.length-2])
