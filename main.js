@@ -2,6 +2,7 @@
 function findCost(cost){
     let total=0;
 
+    
     if(cost.length>3){
         total=cost[0]+cost[cost.length-1]+(2*cost[1]<cost[0]+cost[cost.length-2]?2*cost[1]:cost[0]+cost[cost.length-2])
 
@@ -31,7 +32,10 @@ while(n){
     //no of person
     let person=Number(process.argv[pos]);
     pos=pos+1;
+
+    //minimum cost of travel
     let total=0;
+
     //inserting into the array
     while(person){
         cost.push(Number(process.argv[pos]));
